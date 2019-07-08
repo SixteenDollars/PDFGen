@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upside Analysis</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'Upside Analysis',
+    titlefont: {
+    family: 'arial',
+    size: 24,
+    color: 'black'
+}
+,
+    height: 282,
+    width: 500,
+    xaxis: {
+    title: 'Market Rents',
+    },
+
+
+
+};
+
+var trace0 =
+{
+x: ['1 Bedroom','2 Bedroom','3 Bedroom'],
+y: [2550.0, 3250.0, 4000.0],
+orientation: 'v',
+type: 'bar',
+name: '',
+};
+
+        var data = [ trace0];
+Plotly.newPlot(target_target, data, layout);    </script>
+
+</body>
+</html>
